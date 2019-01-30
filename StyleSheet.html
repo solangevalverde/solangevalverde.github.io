@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="img/favIcon.png">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Solange Valverde</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1 class="company title"><a href="StyleSheet.html">P03: Style Guide</a></h1>
+    <div class="container">
+      <nav class="box nav-Bar">
+
+        <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
+        <a class="button-nav" href="#text_elements">Text Elements</a>
+        <a class="button-nav" href="#combined_elements">Combined Elements</a>
+        <a class="button-nav" href="#Inspiration">Inspiration</a>
+        <a class="button-nav" href="citations.html">Citations</a>
+      </nav>
+    </div>
+  </header>
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
+    <section class="element">
+      <h3>In-text link</h3>
+      <div class="box">
+        <div class="box-item-text">
+          <h4>CSS selector:</h4>
+          <p>.intext-link</p>
+        </div>
+        <div class="box-item-text">
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="intext-link"&gt;Default link&lt;/a&gt;</code>
+        </div>
+        <div class="box-item-text">
+          <h4>Rendered element:</h4>
+          <a class="intext-link" href="#">Default link</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+      <h3>Navigation Link</h3>
+      <div class="box">
+        <div class="box-item-text">
+          <h4>CSS selector:</h4>
+          <p>.button-nav</p>
+          <p>.noStyleNavLink</p>
+        </div>
+        <div class="box-item-text">
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+        </div>
+        <div class="box-item-text">
+          <h4>Rendered element:</h4>
+          <div class="container">
+            <nav class="box nav-Bar">
+              <a class="noStyleNavLink button-nav" href="#">
+                Default Nav Button
+              </a>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+      <div class="box">
+        <div class="box-item-text">
+          <h4>CSS selector:</h4>
+          <p>.buttonWork</p>
+          <p>.noStyleNavLink</p>
+        </div>
+        <div class="box-item-text">
+          <h4>Sample code:</h4>
+          <code>&lt;a href="index.html" class="buttonWork noStyleNavLink"&gt;Submit&lt;/a&gt;</code>
+        </div>
+        <div class="box-item-text">
+          <h4>Rendered element:</h4>
+          <div class="box">
+          <a class="buttonWork noStyleNavLink" href="index.html">
+            index
+          </a></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="element">
+      <h3>Image as a Link</h3>
+      <div class="box">
+        <div class="box-item-text">
+          <h4>CSS selector:</h4>
+          <p>.works</p>
+        </div>
+        <div class="box-item-text">
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="works"&gt;&lt;img src="img/ColabPeru/ActualFinalBanners-01-1024x264.png" alt="animated cat dancing"&gt;&lt;/a&gt;</code>
+        </div>
+        <div class="box-item-text">
+          <h4>Rendered element:</h4>
+          <a href="#" class="works"><img src="img/ColabPeru/ActualFinalBanners-01-1024x264.png" alt="animated cat dancing"></a>
+        </div>
+      </div>
+    </section>
+
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2>Text Elements</h2>
+
+    <section class="element">
+      <h3>Headings</h3>
+      <div class="box">
+        <div class="box-item-text">
+          <h4>CSS selector:</h4>
+          <p>h1</p>
+          <p>h2</p>
+          <p>h3</p>
+          <p>h4</p>
+        </div>
+        <div class="box-item-text">
+          <h4>Sample code:</h4>
+          <code>
+        &lt;h1 class="h1"&gt;Heading 1&lt;/h1&gt;<br>
+        &lt;h2 class="h2"&gt;Heading 2&lt;/h2&gt;<br>
+        &lt;h3 class="h3"&gt;Heading 3&lt;/h3&gt;<br>
+        &lt;h4 class="h4"&gt;Heading 4&lt;/h4&gt;
+
+      </code>
+        </div>
+        <div class="box-item-text">
+          <h4>Rendered element:</h4>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="element">
+      <h3>Paragraphs</h3>
+      <div class="box">
+        <div class="box-item-text">
+          <h4>CSS selector:</h4>
+          <p>p</p>
+        </div>
+        <div class="box-item-text">
+          <h4>Sample code:</h4>
+          <code>
+        &lt;p class="p"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in felis aliquet, aliquet ipsum ac, euismod erat. Nulla non tempor urna. Aliquam in quam euismod felis dapibus congue. Phasellus felis est, semper eu risus ut, finibus malesuada erat. In hac habitasse platea dictumst. Phasellus ipsum est, auctor eu purus sed, pellentesque pharetra ligula. Sed vel odio sit amet massa placerat sodales et vitae ante. Morbi pulvinar dignissim fringilla. Nunc in lorem nunc.&lt;/p&gt;
+
+      </code>
+        </div>
+        <div class="box-item-text">
+          <h4>Rendered element:</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in felis aliquet, aliquet ipsum ac,
+            euismod erat. Nulla non tempor urna. Aliquam in quam euismod felis dapibus congue. Phasellus felis est,
+            semper eu risus ut, finibus malesuada erat. In hac habitasse platea dictumst. Phasellus ipsum est, auctor
+            eu purus sed, pellentesque pharetra ligula. Sed vel odio sit amet massa placerat sodales et vitae ante.
+            Morbi pulvinar dignissim fringilla. Nunc in lorem nunc.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="element">
+      <h3>Numbered Lists</h3>
+      <div class="box">
+        <div class="box-item-text">
+          <h4>CSS selector:</h4>
+          <p>.ulClass</p>
+          <p>.olClass</p>
+        </div>
+        <div class="box-item-text">
+          <h4>Sample code:</h4>
+          <code>
+                      &lt;ul&gt; <br>
+                      &nbsp;&nbsp;&lt;li&gt; List item 1 &lt;/li&gt;<br>
+                      &nbsp;&nbsp;&lt;li&gt; List item 2 &lt;/li&gt;<br>
+                      &nbsp;&nbsp;&lt;li&gt; List item 3 &lt;/li&gt;<br>
+                      &lt;/ul&gt;
+                      &lt;ol&gt;<br>
+                      &nbsp;&nbsp;&lt;li&gt; List item 1 &lt;/li&gt;<br>
+                      &nbsp;&nbsp;&lt;li&gt; List item 2 &lt;/li&gt;<br>
+                      &nbsp;&nbsp;&lt;li&gt; List item 3 &lt;/li&gt;<br>
+                      &lt;/ol&gt;
+                      <br><br>
+                      
+               </code>
+        </div>
+
+        <div class="container-Form box-item-text">
+          <ul class="ulclass group">
+            <li>List item 1 </li>
+            <li>List item 2 </li>
+            <li>List item 3 </li>
+          </ul>
+          <ol class="citations group">
+            <li>List item 1 </li>
+            <li>List item 2 </li>
+            <li>List item 3 </li>
+
+          </ol>
+
+        </div>
+      </div>
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2>Combined Elements</h2>
+  </section>
+
+  <section class="element">
+    <h3>Main Navigation</h3>
+    <!-- nav bar start -->
+    <div class="container box-item-text">
+      <nav class="box nav-Bar">
+        <div class="dropdown">
+          <a class="button-nav" href="index.html">Home</a>
+        </div>
+        <div class="dropdown">
+          <a class="noStyleNavLink button-nav" href="AboutMe.html">
+            About Me
+          </a>
+
+        </div>
+        <div class="dropdown">
+          <a class="noStyleNavLink button-nav disable" href="Works.html">My Work
+          </a>
+          <div class="dropdown-content">
+            <a href="ColabPeru.html">CoLab Peru</a>
+            <a href="AlphaPiPhi.html">Alpha Pi Phi</a>
+          </div>
+        </div>
+
+      </nav>
+
+    </div>
+    <!-- nav bar ends -->
+  </section>
+  <section id="Inspiration">
+    <h2>Inspiration</h2>
+  </section>
+
+  <section class="element">
+    <h3>Imagery/Art Direction:</h3>
+    <!-- nav bar start -->
+    <div class="box">
+      <div class="box-item-text"><img src="img/about_me_-_concept.jpg" alt="Inspiration 1" class="ProjectImg"/></div>
+      <div class="box-item-text"><img src="img/navbar_-_concept.jpg" alt="Inspiration 2" class="ProjectImg"/></div>
+    </div>
+  </section>
+  <section class="element">
+      <h3>Color Palette:</h3>
+      <!-- nav bar start -->
+      <div class="box">
+        <div class="box-item-text"><img src="img/colorPalette-min.png" alt="Color Palette" /></div>
+      </div>
+    </section>
+  <div class="footer">
+
+    <p class="footer-content">© 2018 Solange Valverde</p>
+    <p class="footer-content"><a href="https://www.instagram.com/sv.designs/">Instagram</a></p>
+    <p class="footer-content"><a href="https://www.linkedin.com/in/solangevalverde/">LinkedIn</a></p>
+    <p class="footer-content"><a href="StyleSheet.html">Style Sheet</a></p>
+    <p class="footer-content"><a href="https://gitlab1.its.sfu.ca/svalverd/Portfolio2018.git">GitLab</a></p>
+
+  </div>
+
+
+
+</body>
+
+</html>

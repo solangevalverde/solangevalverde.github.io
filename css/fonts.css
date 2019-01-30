@@ -1,0 +1,24 @@
+/* 
+	Please leave the content below alone for this week's tutorial
+*/
+@font-face {
+	font-family: 'Quan';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Quan.eot');
+	src: url('../fonts/Quan.eot?#iefix') format('embedded-opentype'), 
+		 url('../fonts/Quan.woff2') format('woff2'), 
+		 url('../fonts/Quan.woff') format('woff'),
+		 url('../fonts/Quan.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Quan';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/Quan-Bold.eot');
+	src: url('../fonts/Quan-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Quan-Bold.woff2') format('woff2'),
+		 url('../fonts/Quan-Bold.woff') format('woff'),
+		 url('../fonts/Quan-Bold.ttf') format('truetype');
+}

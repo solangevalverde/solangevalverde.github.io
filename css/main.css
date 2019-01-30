@@ -1,0 +1,659 @@
+header .box-item-text img{
+
+  width:5em;
+height:auto;
+}
+body, html{
+  /* height:96.3%; */
+  margin:0;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////
+    Text Elements
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+
+h1{
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 2.1em;
+}
+h2 {
+  margin:  2rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+h3 {
+  
+  font-family: 'Montserrat', sans-serif;
+ 
+
+  font-style: normal;
+ 
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  margin-bottom: 1.3rem;
+}
+
+h4 {
+  font-style: normal;
+  margin-bottom: 0.25rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.0rem;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  margin-top: 0;
+}
+
+figcaption {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: smaller;
+  margin-top: 0;
+}
+a{
+  color: black;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+a:hover, a:focus{
+  color: black;
+  text-decoration: none;
+}
+ .ulclass{
+  list-style-type: circle;
+  font-family: 'Montserrat', sans-serif;
+  padding:0;
+}
+li{
+  margin:0.5em;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////
+Home Page
+//////////////////////////////////////////////////////////////////////////////////
+*/
+.indexBody{
+
+  background-color: #DFDEE3;
+}
+
+.bg{
+
+ 
+  background-image: url("../img/bg.jpg");
+  /* Full height */
+  height: 100%; 
+ 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:0;
+
+  
+}
+
+
+.Message{
+  margin: 3rem 3rem;
+  
+}
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ 
+ height: inherit;
+ min-height: 84.5vh;
+
+}
+
+.home .box-item-text img{
+  justify-content: center;
+ align-items: center;
+ justify-self: center;
+ background-color: #DFDEE3;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.buttonWork{
+  font-size: 1.2em;
+  padding: 1rem 2rem;
+  border: 0.2rem solid;
+  border-color: #FC486D;
+  background: rgba(200,10,30,0.2);
+  color:black;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin: 1em auto;
+}
+.buttonWork:hover, .buttonWork:focus{
+  /* #ce4e65 */
+  background: #FC486D;
+  color:white;
+  cursor: pointer;
+
+}
+.boxLink{
+  margin:2em auto;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////
+   About me
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+.Slimmer{
+  width:45wh;
+}
+.one, .two{
+  background-color: #ffffff;
+  /* color:#ffffff; */
+  /* border: 1px solid rgb(198, 212, 121); */
+  /* padding: 2em; */
+  width:10%;
+}
+.three{
+  background-color: 	#F8DFE3;
+  color:	#F8DFE3;
+  /* border: 1px solid rgb(66, 0, 11); */
+  width:80%;
+  padding: 2em;
+}
+.bigwhite{
+  width:45wv;
+  padding-right: 1em;
+}
+.pinkwhite{
+  width:55wv;
+}
+.meLandscape{
+  /* filter:grayscale(); */
+  max-width: 50em;
+  height: auto;
+  width:100%;
+}
+
+  /* #aboutMe{
+  align-items: center;
+}  */
+
+#pricesContainer {
+  /* border: 1px solid darkolivegreen; */
+  /* padding: 1rem; */
+  /* flex: 1; */
+  flex-basis: 40%;
+}
+#pricesContainer2 {
+  /* border: 1px solid darkolivegreen; */
+  /* padding: 1rem; */
+  /* flex: 2; */
+  flex-basis: 60%;
+}
+.workText h4{
+  padding-bottom:1rem;
+}
+
+.cart1, .cart2, {
+  color:white;
+}
+
+
+.box-Cart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top:0;
+  margin-bottom: 0;
+  width:100%;
+}
+.checkout{
+flex-wrap: nowrap;
+}
+
+.workText{
+   max-width: 35%;
+}
+.download{
+  max-width: 1em;
+  height: auto;
+}
+.selfie{
+  max-width: 20em;
+  height: auto;
+}
+.AboutText{
+ font-size: 1.35rem;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////
+Works Page
+//////////////////////////////////////////////////////////////////////////////////
+*/
+.sectionWork{
+  margin-right: 1em;
+  margin-left: 1em;
+}
+.sectionWork h2 {
+  text-align: center;
+}
+.boxWork {
+
+
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex;
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+ text-align: center;
+ align-items: center
+}
+.works img{
+  max-width: 103em;
+  height: auto;
+  width: 100%;
+}
+.works:hover, .works:focus{
+
+  opacity: 0.5;
+}
+.workTitleText h1{
+  margin-left: auto;
+    margin-right: auto;
+}
+.workTitleText{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/*/////////////////////////////////////////////////////////////////////////////////
+Projects Page
+//////////////////////////////////////////////////////////////////////////////////
+*/
+#project1-title {
+  background-image: linear-gradient(130deg,  rgba(17, 4, 32, 0.3), rgba(0, 0, 0, 0.3)), url(../img/ColabPeru/Arequipa4-min.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  color: white;
+}
+#project2-title {
+  background-image: linear-gradient(130deg, rgba(17, 4, 32, 0.3), rgba(0, 0, 0, 0.3)), url(../img/APP/Group2-min.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  color: white;
+}
+.section-title {
+  padding-top: 0;
+  margin-top: 0;
+  width: 100%;
+  height: 350px;
+}
+.content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.workTitle{
+  font-size: 6em;
+    text-align: center;
+    margin: 0;    
+    padding-top: 2em;
+    margin-top: 0;
+}
+.BulletContainer{
+  /* border: 1px solid olive; */
+  padding: 1rem;
+      flex: 1;
+      display: flex;
+}
+.BulletContainer h2{
+  text-align: center;
+}
+.brokenUl{
+  /* border: 1px solid blue; */
+  /* width:30em; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.brokenPiece{
+  flex: 1;
+}
+#outterContainer {
+  /* border: 1px solid darkorchid; */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80rem;
+  padding: 1rem;
+  margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.subTitleBox{
+text-align: left;
+width: 50%;
+}
+.subTitleBox h2{
+  text-align: left;
+  width: 50%;
+  }
+
+figure{
+  display: flex;
+  flex-direction: column;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+.ProjectBody{
+  /* ???? */
+}
+.ProjectImg{
+  width:100%;
+  height: auto;
+}
+.icons img{
+  margin: 0.5em;
+  max-width: 8em;
+  height: auto;
+}
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+.bookCover img{
+margin:0.5em;
+}
+.hotbod{
+  margin:2rem 3rem 0rem 3rem;
+}
+.hotbod .TLLogo{
+  max-width: 20em;
+height: auto;
+padding-bottom: 1rem;
+
+}
+.workTitle img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.TTL{
+  /* max-width: 20em; */
+}
+/*/////////////////////////////////////////////////////////////////////////////////
+Navigation button
+inspiration: https://www.succuterra.ca/
+how to change width of underline/border-bottom: http://jsfiddle.net/5580pqe8/
+//////////////////////////////////////////////////////////////////////////////////
+*/
+.bg .container{
+  background-color: #d6d6cb;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  background-color: #d6d6cb;
+ /* justify-content: center;*/
+}
+
+
+.nav-Bar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:  space-around;
+  align-items:center;
+  align-content: space-around;
+ 
+}
+
+.noStyleNavLink{
+  text-decoration: none;
+}
+
+.button-nav{
+  display: block;
+  color:black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  text-align: center;
+
+  margin: 0.3em 0.6em;
+  margin-top: 0.3em;
+  font-size: 1.2rem;
+  padding: .6em .9em;
+  border-bottom: 0.2em solid transparent;
+  
+}
+
+/* .button:focus{
+  
+  background: transparent;
+  border-color:transparent; 
+  } */
+.button-nav:hover, .button-nav:focus{
+  
+  border-bottom: 0.2em solid #FD7C93;
+  transition: border-bottom 0.5s;  
+  }
+.noStyleNavLink:hover, .noStyleNavLink:focus{
+  
+    /* border-bottom: 0.2em solid #FD7C93; */
+    transition: border-bottom 0.5s;  
+    }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DFDEE3;
+    min-width: 8.9rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: .6em .9em;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #FD7C93;}
+.dropdown-content a:focus {background-color: #FD7C93;}
+.dropdown-content .noStyleNavLink .button-nav a:focus {
+border-bottom: 0.2em solid #FD7C93;
+    transition: border-bottom 0.5s;  
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:focus .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #FD7C93;}
+.dropdown:focus .dropbtn {background-color: #FD7C93;}
+
+
+/*////////////////////////////////////////////////////////////////////////
+Footer
+////////////////////////////////////////////////////////////////////////*/
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* margin-top: 1rem; */
+  text-align: center;
+  justify-content: space-around;
+  background-color:#d6d6cb;
+  width: 100%;
+  color: black;
+ 
+  
+}
+
+.footer-content {
+  padding-top:  1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color:#d6d6cb;
+  display: inline-block;
+  font-size: .9rem;
+}
+
+.footer-content a {
+  color: black;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.footer-content a:focus, .footer-content a:hover {
+  color: black;
+  text-decoration: none;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////
+LazyLoading
+//////////////////////////////////////////////////////////////////////////////////////// */
+
+/*
+	Below we have added in the .blur class to allow for our lazyloaded images to be blurred until loaded.
+*/
+.blur {
+	/*
+		Please note that the filter property is not fully supported by all browsers - https://caniuse.com/#feat=css-filters - so it should not be relied on for critical website interactions.
+	*/
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+	transition: filter 400ms;
+}
+
+
+/*
+	Once our image has loaded - and lazysizes.js has applied the .lazyloaded class - we can be more specific with our CSS selectors to allow for the blur to be removed from our image.
+*/
+.blur.lazyloaded {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+
+
+
+
+@media only screen and (max-width: 50em) {
+  /*////////////////////////////////////////////////////////////////////////
+ About Me media trying to get to 850px
+ ////////////////////////////////////////////////////////////////////////*/
+   #pricesContainer {
+ 
+    flex-basis: 100%;
+  }
+  #pricesContainer2 {
+
+    flex-basis: 100%;
+  }
+ }
+/* Stylesheet css */
+.element{
+  margin: 1em auto;
+}
+   /*////////////////////////////////////////////////////////////////////////
+ Projects tittle banner trying to get to 588px
+ ////////////////////////////////////////////////////////////////////////*/
+
+ @media only screen and (max-width: 40em) {
+  .buttonWork{
+    font-size: 0.8em;
+    padding: 1em 0.5em;
+  }
+  .workTitle{
+    padding-top:1em;
+  }
+  figure{
+    margin-left: 0;
+      margin-right: 0;
+  }
+  figcaption{
+    font-size: x-small;
+  }
+  .hotbod{
+    margin-right:0;
+    margin-left:0;
+  }
+  .sectionWork{
+    margin-right:0;
+    margin-left:0;
+  }
+  .RoleToolsMobile{
+    padding-right:3em;
+    padding-left: 3em;
+  }
+  .BulletContainer{
+    flex-wrap:wrap;
+  }
+  .brokenUl{
+    flex-wrap:nowrap;
+  }
+
+   }
+
+
+ @media only screen and (max-width: 30em) {
+.buttonWork{
+  font-size: 0.8em;
+  padding: 1em 0.5em;
+}
+.workTitle{
+  padding-top:1em;
+}
+
+ }
+
+@media only screen and (min-width: 70em) {
+ /*////////////////////////////////////////////////////////////////////////
+About Me media
+////////////////////////////////////////////////////////////////////////*/
+/* body{
+  background-color: #FD7C93;
+} */
+.aboutText{
+ max-width: 40em;
+}
+}

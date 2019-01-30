@@ -1,0 +1,111 @@
+
+/*
+	For more on flexbox, I highly recommend "A Guide to Flexbox": http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+	PLEASE NOTE:
+	A lot of the properties covered below work ONLY when you set display to flexbox. Make sure to understand when and where	you can apply these properties by looking them up as necessary.
+*/
+
+
+/*
+	With the asterisk (*), we are selecting everything. This allows us to apply the border-box model to all elements on the page.
+
+	'::after' and '::before' are psuedo-elements. These are elements that CSS can add either after or before an element's content. You will see these in use if we use the older style of grids, to clear floats.
+*/
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+
+/*
+	Here we are going to establish some rules for our 'box'	which contains all the elements to be wrapped into the flexbox model.
+*/
+.box {
+
+	/*
+		The statement below sets us into the flexbox display mode. Note support for flexbox still necessitates some vendor prefixes (see http://caniuse.com/#search=flex)
+	*/
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex;
+
+	/*
+		A flexbox will try to fit all elements in one line by default. The 'flex-wrap' property lets us wrap child elements that become too wide for their current row.
+	*/
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	/*
+		To get our flexbox to change how elements are spanned across the remaining space, we can use the 'justify-content' property. In this case, we are specifying that we want the extra space to be balanced around our elements.
+	*/
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+
+}
+
+
+.box-item-nav {
+	/*
+		For children of the parent 'flexbox', it is good practice to set a 'flex' property. This is a shorthand in which we in fact set three values, of 'flex-grow', 'flex-shrink' and 'flex-basis' accordingly. In our CSS, this will look like
+
+		flex: flex-grow flex-shrink flex-basis;
+
+		flex-grow - Defines the ability for an element to 'grow' into extra space as needed.
+		flex-shrink - Defines the ability for an element to 'shrink' as needed.
+		flex-basis - Defines the default size of an element before distributing space, can be based on existing height or width.
+
+		Both 'flex-grow' and 'flex-shrink' can be effectively thought as 'weights': For example elements with higher flex-grow weights - such as a value of 2 in a set of elements with weights of 1 - will try and take up more space when available. When the space is not available, the flexbox will compress those items as necessary.
+
+		In the example below, we are setting both the ability of elements to grow and shrink as equal (all 1), and we are telling the default size to pay attention to the element's set default sizing.
+	*/
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+
+
+.box-item-image {
+	/*
+		Given we are working with an image, in this case we have set a flex-basis value that is a pixel value to reflect the 'minimum' width of the image before the flexbox reflows and stacks the elements inside. Additionally, the use of a flex-grow value of 3 ensures that our image is 'heavier' (will take up more space) when available.
+	*/
+	-webkit-flex: 3 1 400px;
+	-ms-flex: 3 1 400px;
+	flex: 3 1 400px;
+}
+
+
+.box-item-text {
+	/*
+		For the text, we want it to behave a bit differently, in this case setting an em value for its flex-basis. Using a 1 for the flex-grow value means it weighs less in comparison to our image, and will take less space when possible.
+	*/
+	-webkit-flex: 1 1 18em;
+	-ms-flex: 1 1 18em;
+	flex: 1 1 18em;
+
+	padding: 0 1rem;
+}
+
+
+/*
+	We can use media queries to apply different styles at specific sizes. In this case, we are specifying when the browser window's width is greater than 50.25em, we should apply the styling within the brackets.
+*/
+@media (min-width: 50.25em) {
+	/*
+		The flexbox 'order' property lets us re-order items	as they are flowed. Smaller values position items closer to the top, or to the left, higher values place them near the end, or to the right. Depending on the orientation of the flexbox flow.
+	*/
+	.box-item-image {
+		-webkit-order: 2;
+		-ms-order: 2;
+		order: 2;
+	}
+
+}
+
+#id {
+    flex-grow: 1;
+    flex-basis: 15em;
+    order: 0;
+
+}
