@@ -5,68 +5,134 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="img/favIcon.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>Solange Valverde</title>
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="css/flexbox.css"> -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/main2.css">
 
 </head>
 
-<body class="indexBody">
-    <div class="bg">
-        <header class="box">
+<body>
+    <!--  start of nav bar-->
+    <header class="box">
+        <div class="container box-item-text">
+            <!--  <img id="navLogo" src="img/SVLogo.png">-->
+            <nav class="box nav-Bar">
+                <div class="dropdown">
+                    <a class="button-nav" href="index.html">Home</a>
+                </div>
+                <div class="dropdown">
+                    <a class="noStyleNavLink button-nav" href="#AboutMe">
+                        About
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <a class="noStyleNavLink button-nav disable" href="WorkWD.html">My Work
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <a class="noStyleNavLink button-nav" href="#Contact">
+                        Contact Me
+                    </a>
+                </div>
 
-            <div class="container box-item-text">
-                <nav class="box nav-Bar">
-                    <div class="dropdown">
-                        <a class="button-nav" href="index.html">Home</a>
-                    </div>
-                    <div class="dropdown">
-                        <a class="noStyleNavLink button-nav" href="AboutMe.html">
-                            About Me
-                        </a>
+            </nav>
 
-                    </div>
-                    <div class="dropdown">
-                        <a class="noStyleNavLink button-nav disable" href="Works.html">My Work
-                        </a>
-                        <div class="dropdown-content">
-                            <a href="ColabPeru.html">CoLab Peru</a>
-                            <a href="AlphaPiPhi.html">Alpha Pi Phi</a>
-                        </div>
-                    </div>
+        </div>
+    </header>
+    <!--  End of nav bar-->
+    <!--start of Landing-->
+    <div class="bg home">
 
-                </nav>
+        <div class="box-item-text indexBody">
+            <h1 class="Message">Solange Valverde</h1>
+            <h2 class="Message">Developer + Graphic Designer</h2>
+        </div>
+    </div>
+    <!--start of About Me-->
 
-            </div>
+    <div id="#AboutMe" class="box about">
 
-
-        </header>
-
-        <div class="box home">
-
-
-            <div class="box-item-text">
-                <h1 class="Message">Hi, I'm Solange, I'm a Programmer + Graphic Designer. I love web and mobile design
-                    and fonts.</h1>
-            </div>
-            <a class="buttonWork noStyleNavLink" href="Works.html">
-                Check My Work!
-            </a>
+        <div class="container box-item-text">
+            <img class="meLanding" src="img/me2.jpg" alt="Me!!" />
         </div>
 
+        <div class="container box-item-text">
+            <div class="infoContainer">
+                <h2>About Me</h2>
+
+                <p> Hi there, I’m a Developer and Designer from Simon Fraser University that moved to
+                    Vancouver Island. While I really enjoy working on<a class="highlight-a" href="WorkWD.html"> Web
+                        Dev </a>, as it involves <a class="highlight-a" href="WorkGD.html"> UX/UI </a>, I truly love
+                    just as much being a<a class="highlight-a" href="WorkGD.html"> Graphic Designer </a> as it allows
+                    my creativy run wild.
+
+                    I loves fonts and games very much. When not coding, designing or gaming, I am most
+                    likely be doing some DIY or baking goods.
 
 
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="footer">
+    <!--start of Services-->
 
-        <p class="footer-content">© 2018 Solange Valverde</p>
-        <p class="footer-content"><a href="https://www.instagram.com/sv.designs/">Instagram</a></p>
-        <p class="footer-content"><a href="https://www.linkedin.com/in/solangevalverde/">LinkedIn</a></p>
-        <p class="footer-content"><a href="StyleSheet.html">Style Sheet</a></p>
-        <p class="footer-content"><a href="https://gitlab1.its.sfu.ca/svalverd/Portfolio2018.git">GitLab</a></p>
+    <div id="#Services" class=" servBg">
+        <div class="infoContainerAbout">
+            <h2 class="Message">Services</h2>
+        </div>
 
+        <div class="box Photography servicesContainer">
+            <a class=" box-item-text" href="WorkWd.html">
+                <div class=" Photographyitem box-item-text">
+                    <h3>Web Development</h3>
+                    <img src="img/wireframe.svg">
+
+                </div>
+            </a>
+            <a class=" box-item-text" href="WorkGD.html">
+                <div class="Photographyitem box-item-text">
+                    <h3>Graphic Design</h3>
+                    <img src="img/logodesign.svg">
+
+                </div>
+            </a>
+            <a class=" box-item-text" href="WorkP.html">
+                <div class="Photographyitem box-item-text">
+                    <h3>Photography</h3>
+                    <img src="img/Photosesh.svg">
+
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!--start of Contact Me-->
+    <div id="Contact" class=" contactBG home">
+        <div class="ContactOpacity">
+            <div class="infoContainer">
+                <h2 class="Message">Contact Me</h2>
+            </div>
+            <div class=" box infoContainer">
+                <div class="box-item-text">
+                    <a href="https://github.com/solangevalverde"> <img class="" src="img/icons/git.png"></a>
+                </div>
+                <div class="box-item-text">
+                    <a href="https://www.instagram.com/sv.designs/"> <img class="" src="img/icons/insta.png"></a>
+                </div>
+                <div class="box-item-text">
+                    <a href="#"><img class="" src="img/icons/mail.png"></a>
+                </div>
+                <div class="box-item-text">
+                    <a href="https://www.linkedin.com/in/solangevalverde/"><img class="" src="img/icons/in.png"></a>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>

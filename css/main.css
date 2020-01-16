@@ -1,6 +1,6 @@
 header .box-item-text img{
 
-  width:5em;
+width:5em;
 height:auto;
 }
 body, html{
@@ -12,22 +12,49 @@ body, html{
     Text Elements
 ///////////////////////////////////////////////////////////////////////////////////////
 */
+@font-face {
+  font-family: 'stylish_classy_fontregular';
+  src: url('https://solangevalverde.github.io/css/fonts/stylish_classy_font-webfont.woff2') format('woff2'),
+       url('https://solangevalverde.github.io/css/fonts/stylish_classy_font-webfont.woff') format('woff'),
+       url('../fonts/Stylish_Classy_Font.ttf') format('truetype');
+       font-weight: normal;
+  font-style: normal;
 
+}
+
+@font-face {
+  font-family: 'brandon_grotesquelight';
+  src: url('css/fonts/brandongrotesque-light-webfont.woff2') format('woff2'),
+       url('https://solangevalverde.github.io/css/fonts/brandongrotesque-light-webfont.woff') format('woff'),
+       url('../fonts/BrandonGrotesque-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'brandon_grotesqueregular';
+  src: url('../fonts/brandongrotesque-regular-webfont.woff2') format('woff2'),
+       url('../fonts/brandongrotesque-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 h1{
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'stylish_classy_fontregular', sans-serif;
   font-style: normal;
-  font-size: 2.1em;
+  font-size: 3.5em;
 }
 h2 {
   margin:  2rem 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-family: 'brandon_grotesquelight', sans-serif;
+  font-size: 2rem;
 }
 
 h3 {
   
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'brandon_grotesqueregular', sans-serif;
  
 
   font-style: normal;
@@ -40,19 +67,19 @@ h3 {
 h4 {
   font-style: normal;
   margin-bottom: 0.25rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'brandon_grotesquelight', sans-serif;
   font-size: 1.0rem;
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'brandon_grotesquelight', sans-serif;
   font-weight: 300;
   font-size: 0.9em;
   margin-top: 0;
 }
 
 figcaption {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'brandon_grotesquelight', sans-serif;
   font-weight: 300;
   font-size: smaller;
   margin-top: 0;
@@ -62,13 +89,27 @@ a{
   transition-property: color;
   transition-duration: 0.5s;
 }
+
+.highlight-a{
+  color: black;
+  background-color: rgb(245, 153, 170);
+  text-decoration: none;
+
+
+}
+  .highlight-a:hover, .highlight-a:focus{
+    color: black;
+    background-color: rgb(243, 119, 142);
+    text-decoration: none;
+  
+  }
 a:hover, a:focus{
   color: black;
   text-decoration: none;
 }
  .ulclass{
   list-style-type: circle;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'brandon_grotesquelight', sans-serif;
   padding:0;
 }
 li{
@@ -79,37 +120,84 @@ li{
 Home Page
 //////////////////////////////////////////////////////////////////////////////////
 */
-.indexBody{
-
-  background-color: #DFDEE3;
+.opacity{
+  background-color: rgb(255, 255, 255,0.5);
+  opacity: 0.5;
+  filter: alpha(opacity=0);
+  z-index:1;
+  width: inherit;
+ 
 }
 
 .bg{
 
  
-  background-image: url("../img/bg.jpg");
+ background-image: url("../img/plantFaded.png");
   /* Full height */
-  height: 100%; 
+  /*height: 100%;*/ 
  
   /* Center and scale the image nicely */
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top:0;
+ 
+  
+}
+#Services{
+  background-color: #FDF6F8;
+  height: 50vw;
+}
 
+#Services h2{
+padding-top:3em;  
+padding-left:1em; 
+padding-bottom: 2em; 
+}
+
+#Services .box .box-item-img{
+  display: inline-block; 
+   text-align: center;
+
+}
+#Services p{
+ padding-bottom: 2em;
+
+}
+
+ .ServicesIMG{
+  display: inline-block;
+  
+
+  width: 30vw;
+  height: auto;
+ }
+.contactBG{
+  background-image: url("../img/High-Contrast-Reversed.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:0;
+ 
   
 }
 
+.ContactOpacity{
+   background-image: url("../img/opacity.png");
+  width: 33%;
+}
 
 .Message{
-  margin: 3rem 3rem;
-  
+  margin: 1rem 7rem;
+  height: 100%;
 }
 
 .home{
   display: flex;
   flex-wrap: wrap;
- justify-content: center;
+ justify-content: right;
  align-items: center;
  
  height: inherit;
@@ -129,6 +217,25 @@ a.disabled {
   cursor: default;
 }
 
+#outterContainer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+#ContactoutterContainer {
+  /* border: 1px solid darkorchid; */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80rem;
+
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+}
 .buttonWork{
   font-size: 1.2em;
   padding: 1rem 2rem;
@@ -158,9 +265,7 @@ a.disabled {
    About me
 ///////////////////////////////////////////////////////////////////////////////////////
 */
-.Slimmer{
-  width:45wh;
-}
+
 .one, .two{
   background-color: #ffffff;
   /* color:#ffffff; */
@@ -177,14 +282,12 @@ a.disabled {
 }
 .bigwhite{
   width:45wv;
-  padding-right: 1em;
+  padding-left: 1em;
 }
-.pinkwhite{
-  width:55wv;
-}
+
 .meLandscape{
   /* filter:grayscale(); */
-  max-width: 50em;
+  max-width: 60em;
   height: auto;
   width:100%;
 }
@@ -209,9 +312,7 @@ a.disabled {
   padding-bottom:1rem;
 }
 
-.cart1, .cart2, {
-  color:white;
-}
+
 
 
 .box-Cart {
@@ -346,17 +447,7 @@ Projects Page
 .brokenPiece{
   flex: 1;
 }
-#outterContainer {
-  /* border: 1px solid darkorchid; */
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 80rem;
-  padding: 1rem;
-  margin-left: auto;
-    margin-right: auto;
-    justify-content: space-around;
-    align-items: center;
-}
+
 .subTitleBox{
 text-align: left;
 width: 50%;
@@ -372,9 +463,7 @@ figure{
   margin-top:2em;
   margin-bottom:2em;
 }
-.ProjectBody{
-  /* ???? */
-}
+
 .ProjectImg{
   width:100%;
   height: auto;
@@ -391,9 +480,7 @@ a.disabled {
 .bookCover img{
 margin:0.5em;
 }
-.hotbod{
-  margin:2rem 3rem 0rem 3rem;
-}
+
 .hotbod .TLLogo{
   max-width: 20em;
 height: auto;
@@ -405,9 +492,7 @@ padding-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
-.TTL{
-  /* max-width: 20em; */
-}
+
 /*/////////////////////////////////////////////////////////////////////////////////
 Navigation button
 inspiration: https://www.succuterra.ca/
@@ -421,10 +506,15 @@ how to change width of underline/border-bottom: http://jsfiddle.net/5580pqe8/
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  background-color: #d6d6cb;
+  background-color: #FFF9FA;
  /* justify-content: center;*/
 }
 
+#navLogo{
+  max-width: 2em;
+  height: 2em;
+  margin:auto 2em;
+}
 
 .nav-Bar{
   display: flex;

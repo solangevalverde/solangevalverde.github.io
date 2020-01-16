@@ -1,0 +1,386 @@
+/* ////////////////////////////////////////////////////////////////////////////////////
+    Fonts
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+
+@font-face {
+    font-family: 'stylish_classy_fontregular';
+    src: url('https://solangevalverde.github.io/css/fonts/stylish_classy_font-webfont.woff2') format('woff2'),
+         url('https://solangevalverde.github.io/css/fonts/stylish_classy_font-webfont.woff') format('woff'),
+         url('../fonts/Stylish_Classy_Font.ttf') format('truetype');
+         font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: 'brandon_grotesquelight';
+    src: url('https://solangevalverde.github.io/css/fonts/brandongrotesque-light-webfont.woff2') format('woff2'),
+         url('https://solangevalverde.github.io/css/fonts/brandongrotesque-light-webfont.woff') format('woff'),
+         url('../fonts/BrandonGrotesque-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: 'brandon_grotesqueregular';
+    src: url('https://solangevalverde.github.io/css/fonts/brandongrotesque-regular-webfont.woff2') format('woff2'),
+         url('https://solangevalverde.github.io/css/fonts/brandongrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+/* ////////////////////////////////////////////////////////////////////////////////////
+    Text Elements
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+h1{
+
+    font-family: 'stylish_classy_fontregular', sans-serif;
+    font-style: normal;
+    font-size: 3.8em;
+  }
+  h2 {
+    margin:  2rem 0;
+    font-family: 'brandon_grotesquelight', sans-serif;
+    font-size: 2.3rem;
+  }
+  
+  h3 {
+    
+    font-family: 'stylish_classy_fontregular', sans-serif;
+   
+  
+    font-style: normal;
+   
+    margin-top: 1.5rem;
+    font-size: 1.15rem;
+    margin-bottom: 1.7rem;
+  }
+  
+  h4 {
+    font-style: normal;
+    margin-bottom: 0.25rem;
+    font-family: 'brandon_grotesquelight', sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  p {
+    font-family: 'brandon_grotesquelight', sans-serif;
+    font-weight: 300;
+    font-size:1em;
+    margin-top: 0;
+  }
+  
+  figcaption {
+    font-family: 'brandon_grotesquelight', sans-serif;
+    font-weight: 300;
+    font-size: smaller;
+    margin-top: 0;
+  }
+  a{
+    color: black;
+    
+  }
+  
+  .highlight-a{
+    color: black;
+    background-color: rgb(245, 153, 170);
+    text-decoration: none;
+  
+  
+  }
+    .highlight-a:hover, .highlight-a:focus{
+      color: black;
+      background-color: rgb(243, 119, 142);
+      text-decoration: none;
+    
+    }
+  a:hover, a:focus{
+    color: black;
+    text-decoration: none;
+  }
+   .ulclass{
+    list-style-type: circle;
+    font-family: 'brandon_grotesquelight', sans-serif;
+    padding:0;
+  }
+  li{
+    margin:0.5em;
+  }
+  
+
+/* ////////////////////////////////////////////////////////////////////////////////////
+    Nav Bar
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+  #navLogo{
+    max-width: 2em;
+    height: 2em;
+    margin:auto 2em;
+  }
+  .button-nav{
+    display: block;
+    color:black;
+    font-family: 'brandon_grotesquelight', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: center;
+  
+    margin: 0.3em 0.6em;
+    margin-top: 0.3em;
+    font-size: 1.2rem;
+    padding: .6em .9em;
+    border-bottom: 0.2em solid transparent;
+    
+  }
+  .button-nav:hover, .button-nav:focus{
+  
+    border-bottom: 0.2em solid #FD7C93;
+    transition: border-bottom 0.5s;  
+    }
+/* ////////////////////////////////////////////////////////////////////////////////////
+    Home
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+body{
+    margin: 0%;
+}
+.bg{
+    background-image: url("../img/plantFaded.png");
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-top:0;
+   }
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    height: inherit;
+    min-height: 86vh;
+  }
+  header .container{
+    background-color: #FFF9FA;
+  }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+   /*  justify-content: center;*/
+  }
+  .meLanding{
+    /* filter:grayscale(); */
+    max-width: 60em;
+    height: auto;
+    width:100%;
+  }
+  .about{
+    background-color:#FEF4F7;
+  }
+  .infoContainer {
+    margin: 7em 3em;
+  }
+  .infoContainerAbout {
+    margin: 7em 3em 0em 3em;
+  }
+  #Services{
+    height: 50vw;
+    height: 60vh;
+  }
+  .servBg {
+    /*background-color:rgb(235, 231, 227);*/
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    
+    height: inherit;
+    min-height: 86vh;
+  }
+  .servBg .servicesContainer a{
+      text-decoration: none;
+  }
+  #Services h2{
+  padding-top:3em;  
+  padding-left:1em; 
+  padding-bottom: 2em; 
+  }
+ .servicesContainer{
+     text-align: center;
+     margin: 0em 1em 3em 1em;
+ }
+  .ServicesIMG{
+    display: inline-block;
+    width: 50vw;
+    height: auto;
+  }
+  .ServContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+
+  }
+   
+  .contactBG{
+    background-image: url("../img/High-Contrast-Reversed.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:0;
+  }   
+  .ContactOpacity{
+    background-image: url("../img/opacity.png");
+   width: 33vw;
+   height: 86vh;
+ }
+ .infoContainer a img{
+     width: 2.5em;
+     height: auto;
+ }
+ 
+ /* ////////////////////////////////////////////////////////////////////////////////////
+    Work - Main Tabs
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+.tabsContainer{
+    padding: 0;
+    text-align: center;
+}
+.tabOn{
+background-color: #EAC7CE;
+Flex: 30%;
+
+}
+.tabOff{
+background-color: #E8E4E4;
+Flex: 30%;
+
+}
+.tabLink{
+    text-decoration: none;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////
+    Work - Web Dev
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+.buttonWork{
+    font-size: 1.2em;
+    padding: 1rem 2rem;
+    border: 0.2rem solid;
+    border-color: #c4c4c4;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    color:#c4c4c4;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'brandon_grotesqueregular', sans-serif;
+    margin: 1em auto;
+  }
+  .buttonWork:hover, .buttonWork:focus{
+    /* #ce4e65 */
+    background: #c4c4c4;
+    color:white;
+    cursor: pointer;
+  
+  }
+.infoContainerWD{
+    
+   margin: 5em 2em 0em 2em;
+    
+}
+.WD{
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    padding: 0 1em;
+}
+.WD .box-item-text{
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    padding: 5px;
+    text-align: center;
+}
+.WDtext{
+    text-align: left;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////
+    Work - Graphic Designer
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+.Colab{
+    box-sizing: content-box;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+.GDicon{
+    flex: auto;
+}
+.GDicon img{
+width:4em;
+height: auto;
+}
+
+.GDarea .Photographyitem{
+max-width:460px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////
+    Work - Photographer
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+
+.Photographyitem{
+    box-sizing: border-box;
+width: 100%;
+
+padding: 5px;
+    /*border: solid rgb(48, 187, 205) 10px;*/
+}
+
+.Photography {
+    box-sizing: content-box;
+width: 100%;
+height: auto;
+}
+
+.Photographyitem img{
+    width: inherit;
+    height: auto;
+}
+
+.PhotographyitemLong{
+    box-sizing: border-box;
+    width: 100%;
+    flex:60%;
+}
+.PhotographyitemShort{
+    box-sizing: border-box;
+    width: 100%;
+}
+.PhotographyitemShort img{
+    width: inherit;
+    height: auto;
+}
+.PhotographyitemLong img{
+    width: inherit;
+    height: auto;
+}
+
+
+
+/*
+.box{
+    border: solid #5B6DCD 10px;
+}*/
