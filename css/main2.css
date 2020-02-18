@@ -384,3 +384,51 @@ height: auto;
 .box{
     border: solid #5B6DCD 10px;
 }*/
+/* ////////////////////////////////////////////////////////////////////////////////////
+    Mobile
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+@media only screen and (max-width: 600px) {
+  .bg {
+    background-image: url("../img/plantFaded.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top:0;
+    text-align: center;
+  }
+
+.ContactOpacity {
+  background-image: url(../img/opacity.png);
+  width: 50vw;
+  height: 86vh;
+}
+
+.contactBG {
+  background-image: url(../img/High-Contrast-Reversed.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.infoContainer {
+  margin: 5em 2em;
+  text-align: center;
+}
+
+.infoContainer .box-item-text {
+  margin: 1em 0em;
+  text-align: center;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////
+    web dev
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+.Photographyitem img{
+
+  margin: 1em 0em;
+}
+
+}
