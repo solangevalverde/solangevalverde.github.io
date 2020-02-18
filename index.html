@@ -6,139 +6,567 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="img/favIcon.png">
     <title>Solange Valverde</title>
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript"
+        src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+
+
+
     <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/goo.css">
     <link rel="stylesheet" href="css/main2.css">
 
 </head>
 
 <body>
+
     <!--  start of nav bar-->
-    <header class="box">
-        <div class="container box-item-text">
+    <header class="box ">
+        <div class="container box-item-text nav">
             <!--  <img id="navLogo" src="img/SVLogo.png">-->
             <nav class="box nav-Bar">
                 <div class="dropdown">
                     <a class="button-nav" href="index.html">Home</a>
                 </div>
                 <div class="dropdown">
-                    <a class="noStyleNavLink button-nav" href="#About">
+                    <a class="noStyleNavLink button-nav" href="About.html">
                         About
                     </a>
                 </div>
                 <div class="dropdown">
-                    <a class="noStyleNavLink button-nav disable" href="WorkWD.html">My Work
+                    <a class="noStyleNavLink button-nav disable" href="index.html#Projects">My Work
                     </a>
                 </div>
                 <div class="dropdown">
-                    <a class="noStyleNavLink button-nav" href="#Contact">
+                    <a class="noStyleNavLink button-nav" href="index.html#Contact">
                         Contact Me
                     </a>
                 </div>
-                <div class="dropdown">
-                        <a class="noStyleNavLink button-nav" href="documents/Resume2020.pdf">
-                            Resume
-                        </a>
-                    </div>
+                <div class="dropdown desktop">
+                    <a class="noStyleNavLink button-nav" href="documents/Resume2020.pdf">
+                        Resume
+                    </a>
+                </div>
             </nav>
-
         </div>
     </header>
     <!--  End of nav bar-->
     <!--start of Landing-->
-    <div class="bg home">
 
-        <div class="box-item-text indexBody">
-            <h1 class="Message">Solange Valverde</h1>
-            <h2 class="Message">Developer + Graphic Designer</h2>
+    <div class=" home">
+        <div class="box-item-text indexBody col-xs-6">
+            <h1 class="Message noselect mobile_device_480px">Solange Valverde</h1>
+            <h1 class="Message noselect desktop">Solange Valverde</h1>
+            <h2 class="Message noselect">Developer + Graphic Designer</h2>
+        </div>
+        <div class="Photographyitem col-xs-6 box-item-text">
+            <img class="" src="img/landing_img.png" alt="graphic of an artistic woman" />
         </div>
     </div>
+
+
     <!--start of About Me-->
 
     <div id="#About" class="box about">
+        <div class="infoContainer mobile_device_480px test">
+            <h2>ABOUT ME</h2>
 
-        <div class="container box-item-text">
-            <img class="meLanding" src="img/me2.jpg" alt="Me!!" />
+            <p> Hi there, I’m a Developer and Designer based in
+                Vancouver Island. While I really enjoy working on<a class="highlight-a" href="WorkWD.html"> Web
+                    Dev </a>, as it involves <a class="highlight-a" href="WorkGD.html"> UX/UI </a>, I truly love
+                just as much being a<a class="highlight-a" href="WorkGD.html"> Graphic Designer </a> as it allows
+                my creativy run wild.<br><br>
+                I loves fonts and games very much. When not coding, designing or gaming,
+                I am most likely be doing some DIY or baking goods.
+            </p>
+            <br>
+            <h2>EDUCATION</h2>
+
+            <p> Sept. 2014 - Dec. 2019<br>
+                Simon Fraser University<br>
+                B.Sc in Interactive Arts + Technology
+            </p>
+        </div>
+        <div class="col-xs-5 infoContainer desktop">
+            <h2>ABOUT ME</h2>
+
+            <p> Hi there, I’m a Developer and Designer based in
+                Vancouver Island. While I really enjoy working on<a class="highlight-a" href="WorkWD.html"> Web
+                    Dev </a>, as it involves <a class="highlight-a" href="WorkGD.html"> UX/UI </a>, I truly love
+                just as much being a<a class="highlight-a" href="WorkGD.html"> Graphic Designer </a> as it allows
+                my creativy run wild.<br><br>
+                I loves fonts and games very much. When not coding, designing or gaming,
+                I am most likely be doing some DIY or baking goods.
+            </p>
+            <br>
+            <h2>EDUCATION</h2>
+
+            <p> Sept. 2014 - Dec. 2019<br>
+                Simon Fraser University<br>
+                B.Sc in Interactive Arts + Technology
+            </p>
         </div>
 
-        <div class="container box-item-text">
-            <div class="infoContainer">
-                <h2>About Me</h2>
+        <!--vertical line test-->
+        <div class="vl desktop"></div>
+        <div class="col-xs-5 infoContainer icons desktop">
+            <h2>SKILLS</h2>
+            <div class="container-Form-icon icon">
 
-                <p> Hi there, I’m a Developer and Designer from Simon Fraser University that moved to
-                    Vancouver Island. While I really enjoy working on<a class="highlight-a" href="WorkWD.html"> Web
-                        Dev </a>, as it involves <a class="highlight-a" href="WorkGD.html"> UX/UI </a>, I truly love
-                    just as much being a<a class="highlight-a" href="WorkGD.html"> Graphic Designer </a> as it allows
-                    my creativy run wild.
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Wireframe.svg" alt="succulent 2">
+                    <p>WIREFRAME</p>
+                </div>
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Code.svg" alt="succulent 3">
+                    <p>PROGRAMMING</p>
+                </div>
 
-                    I loves fonts and games very much. When not coding, designing or gaming, I am most
-                    likely be doing some DIY or baking goods.
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Typography.svg" alt="Cactus Image 3">
+                    <p>TYPOGRAPHY</p>
+                </div>
+                <div class="container-Item col-xs-4  ">
+                    <img class="box-item-image-icon" src="img/icons/CC.svg" alt="Succulent Image 1">
+                    <p>ADOBE SUITE</p>
+                </div>
 
+                <div class="container-Item col-xs-4">
 
-                </p>
+                    <img class="box-item-image-icon" src="img/icons/Camera.svg" alt="Cactus Image 3">
+                    <p>PHOTOGRAPHY</p>
+                </div>
+                <div class="container-Item col-xs-4">
+
+                    <img class="box-item-image-icon" src="img/icons/HTML.svg" alt="Cactus Image 3">
+                    <p>HTML + CSS + JS</p>
+                </div>
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Ideation.svg" alt="Cactus Image 3">
+                    <p>IDEATION</p>
+                </div>
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Communication.svg" alt="Cactus Image 5">
+                    <p>COMMUNICATION</p>
+                </div>
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Design.svg" alt="Cactus Image 1">
+                    <p>DESIGN</p>
+                </div>
+
             </div>
+
+
+            <div class="gooButton">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 59 -9"
+                                result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <span class="b1--bubble__container">
+                    <a href="About.html" class="b1 b1--bubble">
+                        LEARN MORE
+                    </a>
+                    <span class="b1--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="b1 effect-b1"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                    </span>
+                </span>
+            </div>
+
+
+        </div>
+
+        <div class="mobile_device_480px infoContainer icons">
+            <h2>SKILLS</h2>
+            <div class="container-Form-icon icon">
+
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Wireframe.svg" alt="succulent 2">
+                    <p>WIREFRAME</p>
+                </div>
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Code.svg" alt="succulent 3">
+                    <p>PROGRAMMING</p>
+                </div>
+
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Typography.svg" alt="Cactus Image 3">
+                    <p>TYPOGRAPHY</p>
+                </div>
+                <div class="container-Item col-xs-4  ">
+                    <img class="box-item-image-icon" src="img/icons/CC.svg" alt="Succulent Image 1">
+                    <p>ADOBE SUITE</p>
+                </div>
+
+                <div class="container-Item col-xs-4">
+
+                    <img class="box-item-image-icon" src="img/icons/Camera.svg" alt="Cactus Image 3">
+                    <p>PHOTOGRAPHY</p>
+                </div>
+                <div class="container-Item col-xs-4">
+
+                    <img class="box-item-image-icon" src="img/icons/HTML.svg" alt="Cactus Image 3">
+                    <p>HTML + CSS + JS</p>
+                </div>
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Ideation.svg" alt="Cactus Image 3">
+                    <p>IDEATION</p>
+                </div>
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Communication.svg" alt="Cactus Image 5">
+                    <p>COMMUNICATION</p>
+                </div>
+                <div class="container-Item col-xs-4">
+                    <img class="box-item-image-icon" src="img/icons/Design.svg" alt="Cactus Image 1">
+                    <p>DESIGN</p>
+                </div>
+
+            </div>
+
+
+            <div class="gooButton">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 59 -9"
+                                result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <span class="b1--bubble__container">
+                    <a href="About.html" class="b1 b1--bubble">
+                        LEARN MORE
+                    </a>
+                    <span class="b1--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="b1 effect-b1"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                    </span>
+                </span>
+            </div>
+
+
         </div>
     </div>
     <!--start of Services-->
 
-    <div id="#Services" class=" servBg">
-        <div class="infoContainerAbout">
-            <h2 class="Message">Services</h2>
-        </div>
-
+    <div id="Projects" class=" servBg">
         <div class="box Photography servicesContainer">
-            <a class=" box-item-text" href="WorkWd.html">
-                <div class=" Photographyitem box-item-text">
-                    <h3>Web Development</h3>
-                    <img src="img/wireframe.svg">
+            <div class="infoContainerAbout mobile_device_480px col-xs-12  ">
+                <h2 class="Message">PROJECTS</h2>
+                <p>lorem ipsum here~ </p>
+            </div>
+            <div class="desktop infoContainerAbout col-xs-4 ">
+                    <div class="sticky">
+                            <h2 class="Message">PROJECTS</h2>
+                            <p>lorem ipsum here~ </p>
+                        </div>
+            </div>
 
-                </div>
-            </a>
-            <a class=" box-item-text" href="WorkGD.html">
-                <div class="Photographyitem box-item-text">
-                    <h3>Graphic Design</h3>
-                    <img src="img/logodesign.svg">
+            <div class="desktop col-xs-4 ">
 
+                <div class="bubbly-div">
+                    <a class=" box-item-text" href="WevDev.html">
+                        <div class=" Photographyitem box-item-text">
+                            <h3>Web Development</h3>
+                            <img src="img/webdev.svg">
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a class=" box-item-text" href="WorkP.html">
-                <div class="Photographyitem box-item-text">
-                    <h3>Photography</h3>
-                    <img src="img/Photosesh.svg">
 
+                <div class="mosaiac bubbly-div">
+
+                    <a class=" box-item-text" href="GD.html">
+                        <div class="Photographyitem box-item-text">
+                            <h3>Graphic Design</h3>
+                            <img src="img/logodesign.svg">
+                        </div>
+                    </a>
                 </div>
-            </a>
+                <div class="bubbly-div">
+                    <a class=" box-item-text " href="Wireframe.html">
+                        <div class="Photographyitem box-item-text">
+                            <h3>Wireframe</h3>
+                            <img src="img/wireframe.svg">
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class=" desktop col-xs-4 ">
+                <div class="mosaiac bubbly-div">
+                    <a class=" box-item-text" href="Photography.html">
+                        <div class="Photographyitem box-item-text">
+                            <h3>Photography</h3>
+                            <img src="img/Photosesh.svg">
+
+                        </div>
+                    </a>
+                </div>
+                <div class="bubbly-div">
+                    <a class=" box-item-text" href="Prototyping.html">
+                        <div class="Photographyitem box-item-text">
+                            <h3>Mobile Prototyping</h3>
+                            <img src="img/MobilePrototype.svg">
+
+                        </div>
+                    </a>
+                </div>
+                <div class="mosaiac bubbly-div">
+                    <a class=" box-item-text " href="Programming.html">
+                        <div class="Photographyitem box-item-text">
+                            <h3>Programming</h3>
+                            <img src="img/Programming.svg">
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile_device_480px col-xs-6 ">
+
+                <div class="bubbly-div">
+                    <a class=" box-item-text" href="WorkWd.html">
+                        <div class=" Photographyitem box-item-text">
+                            <h3>Web Development</h3>
+                            <img src="img/webdev.svg">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mosaiac bubbly-div">
+
+                    <a class=" box-item-text" href="GD.html">
+                        <div class="Photographyitem box-item-text">
+                            <h3>Graphic Design</h3>
+                            <img src="img/logodesign.svg">
+                        </div>
+                    </a>
+                </div>
+                <div class="bubbly-div">
+                    <a class=" box-item-text " href="Wireframe.html">
+                        <div class="Photographyitem box-item-text">
+                            <h3>Wireframe</h3>
+                            <img src="img/wireframe.svg">
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <div class=" mobile_device_480px col-xs-6 ">
+                <div class="mosaiac bubbly-div">
+                    <a class=" box-item-text" href="Photography.html">
+                        <div class="Photographyitem box-item-text">
+                            <h3>Photography</h3>
+                            <img src="img/Photosesh.svg">
+
+                        </div>
+                    </a>
+                </div>
+                <div class="bubbly-div">
+                    <a class=" box-item-text" href="Prototyping.html">
+                        <div class="Photographyitem box-item-text">
+                            <h3>Mobile Prototyping</h3>
+                            <img src="img/MobilePrototype.svg">
+
+                        </div>
+                    </a>
+                </div>
+                <div class="mosaiac bubbly-div">
+                    <a class=" box-item-text " href="Programming.html">
+                        <div class="Photographyitem box-item-text">
+                            <h3>Programming</h3>
+                            <img src="img/Programming.svg">
+
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-
-
-
-    <!--start of Contact Me-->
+    <!--Contact information starts!-->
     <div id="Contact" class=" contactBG home">
-        <div class="ContactOpacity">
+        <div class="col-xs-4 desktop">
             <div class="infoContainer">
-                <h2 class="Message">Contact Me</h2>
+                <h2 class="Message">CONTACT</h2>
             </div>
-            <div class=" box infoContainer">
-                <div class="box-item-text">
-                    <a href="https://github.com/solangevalverde"> <img class="" src="img/icons/git.png"></a>
-                </div>
-                <div class="box-item-text">
-                    <a href="https://www.instagram.com/sv.designs/"> <img class="" src="img/icons/insta.png"></a>
-                </div>
-                <div class="box-item-text">
-                    <a href="#"><img class="" src="img/icons/mail.png"></a>
-                </div>
-                <div class="box-item-text">
-                    <a href="https://www.linkedin.com/in/solangevalverde/"><img class="" src="img/icons/in.png"></a>
-                </div>
-                <div>
+            <div class="infoContainer icons">
+                <div class="container-Form-icon icon">
+
+                    <div class="container-Item col-xs-6">
+                        <a href="https://www.instagram.com/sv.designs/">
+                            <img class="box-item-image-icon ColorChange" src="img/icons/Insta.svg" alt="succulent 2">
+
+                        </a>
+                    </div>
+
+
+                    <div class="container-Item col-xs-6">
+                        <a href="https://www.linkedin.com/in/solangevalverde/">
+                            <img class="box-item-image-icon ColorChange" src="img/icons/linkedin.svg"
+                                alt="Cactus Image 3">
+
+                        </a>
+                    </div>
+                    <div class="container-Item col-xs-6  ">
+                        <img class="box-item-image-icon ColorChange" src="img/icons/Email.svg" alt="Succulent Image 1">
+
+                    </div>
+
+                    <div class="container-Item col-xs-6">
+                        <a href="https://github.com/solangevalverde">
+                            <img class="box-item-image-icon ColorChange" src="img/icons/Github.svg"
+                                alt="Cactus Image 3">
+
+                        </a>
+                    </div>
+
 
                 </div>
+            </div>
+
+            <div class="gooButton desktop">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 59 -9"
+                                result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <span class="b1--bubble__container">
+                    <a href="#" class="b1 b1--bubble">
+                        RESUME
+                    </a>
+                    <span class="b1--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="b1 effect-b1"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="col-xs-8 desktop">
+        </div>
+        <div class="mobile_device_480px col-xs-12">
+            <div class="infoContainer">
+                <h2 class="Message">CONTACT</h2>
+            </div>
+            <div class="infoContainer icons">
+                <div class="container-Form-icon icon">
+
+                    <div class="container-Item col-xs-6">
+                        <a href="https://www.instagram.com/sv.designs/">
+                            <img class="box-item-image-icon ColorChange" src="img/icons/Insta.svg" alt="succulent 2">
+
+                        </a>
+                    </div>
+
+
+                    <div class="container-Item col-xs-6">
+                        <a href="https://www.linkedin.com/in/solangevalverde/">
+                            <img class="box-item-image-icon ColorChange" src="img/icons/linkedin.svg"
+                                alt="Cactus Image 3">
+
+                        </a>
+                    </div>
+                    <div class="container-Item col-xs-6  ">
+                        <img class="box-item-image-icon ColorChange" src="img/icons/Email.svg" alt="Succulent Image 1">
+
+                    </div>
+
+                    <div class="container-Item col-xs-6">
+                        <a href="https://github.com/solangevalverde">
+                            <img class="box-item-image-icon ColorChange" src="img/icons/Github.svg"
+                                alt="Cactus Image 3">
+
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="gooButton">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 59 -9"
+                                result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" />
+                        </filter>
+                    </defs>
+                </svg>
+
+                <span class="b1--bubble__container">
+                    <a href="#" class="b1 b1--bubble">
+                        RESUME
+                    </a>
+                    <span class="b1--bubble__effect-container">
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+                        <span class="circle top-left"></span>
+
+                        <span class="b1 effect-b1"></span>
+
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                        <span class="circle bottom-right"></span>
+                    </span>
+                </span>
             </div>
         </div>
     </div>
 
+    <script type="text/javascript" src="js/GooButton.js"></script>
 </body>
 
 </html>

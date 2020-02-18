@@ -45,17 +45,18 @@ h1{
     margin:  2rem 0;
     font-family: 'brandon_grotesquelight', sans-serif;
     font-size: 2.3rem;
+    letter-spacing: 0.2em; 
   }
   
   h3 {
     
-    font-family: 'stylish_classy_fontregular', sans-serif;
+    font-family: 'brandon_grotesquelight', sans-serif;
    
   
     font-style: normal;
    
-    margin-top: 1.5rem;
-    font-size: 1.15rem;
+    margin-top: 1.7rem;
+    font-size: 1.8rem;
     margin-bottom: 1.7rem;
   }
   
@@ -63,14 +64,15 @@ h1{
     font-style: normal;
     margin-bottom: 0.25rem;
     font-family: 'brandon_grotesquelight', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   
   p {
     font-family: 'brandon_grotesquelight', sans-serif;
     font-weight: 300;
-    font-size:1em;
-    margin-top: 0;
+    font-size:1.1em;
+    margin: 0.2rem 0rem;
+    line-height: 2em;
   }
   
   figcaption {
@@ -86,14 +88,14 @@ h1{
   
   .highlight-a{
     color: black;
-    background-color: rgb(245, 153, 170);
+    background-color:#318BAF;
     text-decoration: none;
   
   
   }
     .highlight-a:hover, .highlight-a:focus{
       color: black;
-      background-color: rgb(243, 119, 142);
+      background-color: #708EC7;
       text-decoration: none;
     
     }
@@ -110,34 +112,46 @@ h1{
     margin:0.5em;
   }
   
-
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
 /* ////////////////////////////////////////////////////////////////////////////////////
     Nav Bar
 ///////////////////////////////////////////////////////////////////////////////////////
 */
+header .container{
+  background-color: #318BAF;
+}
   #navLogo{
     max-width: 2em;
     height: 2em;
     margin:auto 2em;
   }
+
   .button-nav{
     display: block;
-    color:black;
+    color:white;
     font-family: 'brandon_grotesquelight', sans-serif;
     font-weight: lighter;
     text-decoration: none;
     text-align: center;
   
-    margin: 0.3em 0.6em;
+    margin: 0.4em 0.6em;
     margin-top: 0.3em;
-    font-size: 1.2rem;
-    padding: .6em .9em;
+    font-size: 1.5rem;
+    padding: .35em .9em;
     border-bottom: 0.2em solid transparent;
     
   }
   .button-nav:hover, .button-nav:focus{
   
-    border-bottom: 0.2em solid #FD7C93;
+    border-bottom: 0.2em solid #454545;
     transition: border-bottom 0.5s;  
     }
 /* ////////////////////////////////////////////////////////////////////////////////////
@@ -155,17 +169,23 @@ body{
      background-size: cover;
      margin-top:0;
    }
+   
 .home{
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
     align-items: center;
-    height: inherit;
+    /*height: inherit;*/
     min-height: 86vh;
   }
-  header .container{
-    background-color: #FFF9FA;
-  }
+
+.indexBody{
+  margin: 9em 1em 0em 1em;
+
+}
+.indexBody h1{
+  margin-bottom:1em;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -173,24 +193,43 @@ body{
    /*  justify-content: center;*/
   }
   .meLanding{
-    /* filter:grayscale(); */
+   
     max-width: 60em;
     height: auto;
     width:100%;
   }
   .about{
-    background-color:#FEF4F7;
+    background-color:#454545;
   }
   .infoContainer {
-    margin: 7em 3em;
+    padding: 7em 3em;
+    color:white;
+    text-align: left;
+   
+  }
+  .icons{
+    text-align: center;
+  }
+  .icons h2{
+    text-align: left;
   }
   .infoContainerAbout {
-    margin: 7em 3em 0em 3em;
+    margin: 5em 0em 0em 0em;
+   
   }
-  #Services{
-    height: 50vw;
-    height: 60vh;
+  .vl {
+    border-left: 0.4rem solid #318BAF;
+    margin: 5em 0em;
+    height: 50rem;
   }
+  .hl {
+    color: #318BAF;
+    height:0.4rem;
+    margin: 0em 5em;
+    background-color: #318BAF;
+    border: 0;
+  }
+
   .servBg {
     /*background-color:rgb(235, 231, 227);*/
     background-color: #FFFFFF;
@@ -198,20 +237,23 @@ body{
     flex-wrap: wrap;
     justify-content: right;
     
-    height: inherit;
+    height: fit-content;
     min-height: 86vh;
   }
   .servBg .servicesContainer a{
       text-decoration: none;
+     
   }
-  #Services h2{
+  #Projects h2{
   padding-top:3em;  
   padding-left:1em; 
   padding-bottom: 2em; 
   }
  .servicesContainer{
      text-align: center;
-     margin: 0em 1em 3em 1em;
+ }
+ .servicesContainer .col-xs-4{
+   padding: 0px;
  }
   .ServicesIMG{
     display: inline-block;
@@ -225,7 +267,27 @@ body{
     justify-content: center;
 
   }
-   
+  .Projects .infoContainer{
+    color: #000000;
+
+  }
+  .hoverProject:hover{
+    box-shadow: inset  0 2px 25px #318BAF;
+     /*    transform: scale(1.1);
+    */
+  /*  box-shadow: inset  0 2px 25px #318BAF;
+    */
+  }
+  .IFRAME{
+    text-align: center;
+  }
+
+ .mosaiac{
+   background-color: #E6F1F5;
+ }
+ .mosaiacOdd{
+  background-color: #454545;
+}
   .contactBG{
     background-image: url("../img/High-Contrast-Reversed.jpg");
     background-position: center;
@@ -243,6 +305,90 @@ body{
      height: auto;
  }
  
+ .container-Bar {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+/*
+.icons .container-Icon{
+ /* Margin: 4rem;
+  text-align: center;
+  text-justify: auto;   
+}
+.box-item-image-icon{
+  width: 4rem;
+  height: auto;
+  margin: 2rem 0rem;
+}
+.box-item-image-icon img{
+  width: inherit;
+}
+*/
+.box-item-image-icon{
+  width: 3rem;
+  height: auto;
+}
+
+
+.container-Form-icon{
+  display: inline-table;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 1em;
+}
+
+.icon .container-Item{
+  PADDING: inherit;
+  text-align: center;
+}
+
+.icon p {
+  color: #ffffff;
+}
+
+
+.contactBG .col-xs-4{
+  background-color: #454545;
+  height: inherit;
+}
+
+.contactBG .col-xs-4 .infoContainer{
+  padding: 5em 3em 4em 3em;
+    color: white;
+}
+.gooButton.desktop{
+  margin: 2em 0em 2em 0em;
+  padding: 3em 0em;
+}
+.gooButton.desktop .b1--bubble__container{
+  width: 15em;;
+}
+.ColorChange:hover{
+  filter: invert(0.5) brightness(1000%) ;
+    }
+
+ /* ////////////////////////////////////////////////////////////////////////////////////
+   About
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+.aboutBody{
+  background-color: #454545;
+}
+
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30%;
+  margin-bottom: 7em;
+
+}
+
+
  /* ////////////////////////////////////////////////////////////////////////////////////
     Work - Main Tabs
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -264,6 +410,21 @@ Flex: 30%;
 .tabLink{
     text-decoration: none;
 }
+/* ////////////////////////////////////////////////////////////////////////////////////
+    Work - Web Dev
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+.company{
+padding-left: 0;
+margin-top:1em;
+color:#318BAF;
+}
+.Exp h4{
+  color:#318BAF;
+  margin-top: 0.1rem;
+}
+
+
 /* ////////////////////////////////////////////////////////////////////////////////////
     Work - Web Dev
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -378,6 +539,147 @@ height: auto;
     height: auto;
 }
 
+.Figma{
+ border: 1px solid rgba(0, 0, 0, 0.1);
+ margin:1em;
+ width:30em;
+  height:50em;
+}
+
+/*
+///////////////////////////////////////////////////////////////////////////////
+Programming
+//////////////////////////////////////////////////////////////////////////////
+*/
+.code img{
+  padding: 1em;
+  width: 35em;
+}
+
+/*
+///////////////////////////////////////////////////////////////////////////////
+bubbly div
+//////////////////////////////////////////////////////////////////////////////
+*/
+
+
+.bubbly-div{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+}
+
+.mosaiac
+ .bubbly-div{
+  background-color: #fff ;
+}
+.bubbly-div:focus {
+  outline: 0;
+}
+
+.bubbly-div:before,
+.bubbly-div:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+
+.bubbly-div:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #318BAF 20%, transparent 30%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #318BAF 15%, transparent 20%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%,
+    15% 15%, 10% 10%, 18% 18%;
+  background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;
+}
+
+.bubbly-div:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #318BAF 15%, transparent 20%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%),
+    radial-gradient(circle, #318BAF 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%,
+    20% 20%;
+  background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+}
+
+.bubbly-div:hover {
+  transform: scale(0.9);
+  background-color: darken(#318BAF, 5%);
+  box-shadow: 0 2px 25px #318BAF;
+}
+
+.bubbly-div.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+  }
+  .bubbly-div.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+  }
+
+
+
+@keyframes topBubbles {
+0% {
+  background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+    40% 90%, 55% 90%, 70% 90%;
+}
+50% {
+  background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+    50% 50%, 65% 20%, 90% 30%;
+}
+100% {
+  background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+    50% 40%, 65% 10%, 90% 20%;
+  background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+}
+
+@keyframes bottomBubbles {
+0% {
+  background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+    70% -10%, 70% 0%;
+}
+50% {
+  background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+    105% 0%;
+}
+100% {
+  background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+    110% 10%;
+  background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+}
+
 
 
 /*
@@ -385,41 +687,37 @@ height: auto;
     border: solid #5B6DCD 10px;
 }*/
 /* ////////////////////////////////////////////////////////////////////////////////////
-    Mobile
+    Medium
 ///////////////////////////////////////////////////////////////////////////////////////
 */
-@media only screen and (max-width: 600px) {
-  .bg {
-    background-image: url("../img/plantFaded.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top:0;
-    text-align: center;
-  }
+@media only screen and (max-width: 800px) and (min-width: 601px) {
 
-.ContactOpacity {
-  background-image: url(../img/opacity.png);
-  width: 50vw;
-  height: 86vh;
+  .infoContainer {
+    margin: 5em 2em;
+}
+.meLanding {
+  max-width: 23em;
+  height: auto;
+  width: fit-content;}
+
 }
 
-.contactBG {
-  background-image: url(../img/High-Contrast-Reversed.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 0;
+@media only screen and (max-width: 654px) and (min-width: 610px) {
+
+  .infoContainer {
+    margin: 4em 2em;
+}
+.meLanding {
+  max-width: 20em;
+  height: auto;
+  width: fit-content;}
+
 }
 
-.infoContainer {
-  margin: 5em 2em;
-  text-align: center;
-}
 
-.infoContainer .box-item-text {
-  margin: 1em 0em;
-  text-align: center;
-}
+
+
+
 
 
 /* ////////////////////////////////////////////////////////////////////////////////////
@@ -431,4 +729,179 @@ height: auto;
   margin: 1em 0em;
 }
 
+
+/* ////////////////////////////////////////////////////////////////////////////////////
+ ////////////////////////////////////////////////////////////////////////////////////
+Screen size Change
+///////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+
+  /* if desktop */
+
+.mobile_device_480px{
+    display: none;
+}
+
+ /* ////////////////////////////////////////////////////////////////////////////////////
+    Mobile
+///////////////////////////////////////////////////////////////////////////////////////
+*/
+  /* if mobile device max width 480px */
+  @media only screen and (max-width: 480px) {
+   
+    .mobile_device_480px{display: block;}
+    .desktop {display: none;}
+    h1{
+      line-height: 1.8em;
+    }
+    .indexBody {
+      margin: 3em 1em 0em 1em;
+  }
+    .infoContainer {
+      padding:1em 2em 1em 2em;
+      margin: 2em 2em 1em 2em;
+      text-align: center;
+    }
+    .mobile_device_480px.col-xs-6{
+      padding: 0em;
+    }
+    .contactBG.home{
+      min-height: 50vh;
+    }   
+    .contactBG .col-xs-12 {
+      background-color: #454545;
+    }
+    .gooButton {
+      margin-top: 2em; 
+      padding: 5em 1em 5em 0em;
+    }
+    /*about*/
+    .b1--bubble__container {
+      width: 10em;
+  }
+  .infoContainer.about{
+    margin: 1em 0em;
+    overflow: scroll;
+  }
+  .aboutBody .Message.mobile_device_480px{
+    color: #fff;
+  }
+
+  /*projects*/
+  .mobile_device_480px.Projects{
+    display: flex;
+  }
+
+  .Figma{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin:1em;
+    width:24em;
+    height:46em;
+  }
+  .Figma.Tims{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin:1em;
+    width:24em;
+    height:55em;
+  }
+  .code img{
+    width: inherit;
+  }
+  .connected-carousels .stage {
+    width: 26em;
+    margin: 2em auto;
+    position: relative;
+  }
+  .connected-carousels .navigation {
+    width: 25em;
+    margin:1em auto;
+    position: relative;
+  }
+  .connected-carousels .carousel-navigation {
+    height: 8em;
+    width: 26em;
+  }
+  .connected-carousels .carousel li {
+    float: left;
+    text-align: left;
+  }
+
+   /*Slider*/
+   .product-image-carousels {
+    --main-image-width: 19em;
+    --main-image-height: 18em;
+    --thumbnail-track-width: 3em;
+    --thumbnail-height: 1.5em;
+  }
+  .main-image-slider {
+    margin: 1em;
+}
+.container.nav{
+   justify-content: center;
+}
+.infoContainerAbout{
+  margin: 0px;
+}
+
+ }
+
+@media only screen and (max-width: 696px) and (min-width: 481px) {
+
+  .desktop {display: none;}
+  .mobile_device_480px{display: block;}
+  h1{
+    font-size: 4em;
+    line-height: 1.9em;
+  }
+  .indexBody {
+    margin: 5em 1em 0em 1em;
+  }
+  .infoContainer {
+    margin: 2em 2em;
+    padding:1em 2em 1em 2em;
+    text-align: center;
+  }
+
+  .infoContainer .box-item-text {
+    margin: 1em 0em;
+    text-align: center;
+  }
+  .mobile_device_480px.col-xs-6{
+    padding: 0em;
+  }
+  .contactBG.home{
+    min-height: 50vh;
+  }   
+  .contactBG .col-xs-12 {
+    background-color: #454545;
+  }
+
+  .gooButton {
+    display: block;
+    margin-top: 2em; 
+    padding: 5em 1em 5em 0em;
+  }
+  .b1--bubble__container {
+    width: 10em;
+  }
+  .infoContainer.about{
+    margin: 1em 0em;
+    overflow: scroll;
+  }
+  /*about*/
+  .aboutBody .Message.mobile_device_480px{
+  color: #fff;
+  }
+
+   /*projects*/
+   .mobile_device_480px.Projects{
+    display: flex;
+  }
+  .Figma{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin:1em;
+    width:25em;
+    height:57em;
+  }
 }
