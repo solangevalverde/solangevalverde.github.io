@@ -160,6 +160,9 @@ header .container{
 */
 body{
     margin: 0%;
+    /*
+    background-color: #ECECEC;
+    */
 }
 .bg{
     background-image: url("../img/plantFaded.png");
